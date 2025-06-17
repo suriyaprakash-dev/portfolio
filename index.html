@@ -1,0 +1,192 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suriya Prakash | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        body {
+            line-height: 1.6;
+            background: #f9f9f9;
+            color: #333;
+        }
+        
+        header {
+            background: #111;
+            color: #fff;
+            padding: 20px 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1100px;
+            margin: auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+        
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #00bcd4;
+        }
+        
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            background-color: #e0f7fa;
+        }
+        
+        .hero h1 span {
+            color: #00796b;
+        }
+        
+        .section {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        
+        .project {
+            background: #fff;
+            margin: 15px 0;
+            padding: 15px;
+            border-left: 4px solid #00bcd4;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skills li {
+            background: #00796b;
+            color: #fff;
+            padding: 8px 12px;
+            border-radius: 4px;
+            list-style: none;
+        }
+        
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background: #00bcd4;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #0097a7;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">Suriya Prakash</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Hi, I'm <span>Suriya Prakash</span></h1>
+        <p>Full Stack Developer | Python, Flask, React</p>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>I’m a passionate Full Stack Developer skilled in building dynamic web apps using Python, Flask, MySQL, React, and more. I enjoy solving problems and bringing ideas to life with code.</p>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>AI Resume Builder</h3>
+            <p>AI-powered tool for ATS scoring and resume enhancement. Tech: Django, React, OpenAI API.</p>
+        </div>
+        <div class="project">
+            <h3>Movie Links Telegram Bot</h3>
+            <p>Telegram bot to fetch movie links using Python and Telegram Bot API.</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul class="skills">
+            <li>Python</li>
+            <li>Flask</li>
+            <li>Django</li>
+            <li>React</li>
+            <li>MySQL</li>
+            <li>Git & GitHub</li>
+            <li>Problem-Solving</li>
+        </ul>
+    </section>
+
+    <section id="resume" class="section">
+        <h2>Resume</h2>
+        <a class="btn" href="resume.pdf" download>Download My Resume (PDF)</a>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:sivasuriya141@gmail.com">sivasuriya141@gmail.com</a></p>
+        <p>GitHub: <a href="https://github.com/suriyaprakash-dev" target="_blank">suriyaprakash-dev</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/suriya-prakash456" target="_blank">suriya-prakash456</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Suriya Prakash. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
