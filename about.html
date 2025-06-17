@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | Suriya Prakash</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+        }
+        
+        header {
+            background: #111;
+            padding: 15px 0;
+        }
+        
+        .navbar {
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #fff;
+        }
+        
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #00bcd4;
+        }
+        
+        .about-section {
+            max-width: 1000px;
+            margin: auto;
+            padding: 60px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        .about-text h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        .about-text p {
+            font-size: 18px;
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+        
+        .about-image {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .about-image img {
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: white;
+        }
+        /* Responsive Styling */
+        
+        @media (max-width: 768px) {
+            .about-section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .about-image img {
+                width: 80%;
+                max-width: 280px;
+            }
+            .about-text h1 {
+                font-size: 28px;
+            }
+            .about-text p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Suriya Prakash</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="resume.pdf" download>Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="about-text">
+            <h1>About Me</h1>
+            <p>
+                I'm Suriya Prakash, a Full Stack Developer with expertise in Python, Flask, Django, React, and MySQL. I love building efficient backend systems and creating smooth, user-friendly interfaces.
+            </p>
+            <p>
+                I’m passionate about learning new technologies, solving real-world problems, and contributing to impactful projects. My goal is to become a skilled software architect who builds clean and scalable solutions.
+            </p>
+            <p>
+                Outside of coding, I enjoy exploring AI tools, building mini projects, and continuously upgrading my development skills.
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="img1.jpg" alt="Suriya Prakash - Full Stack Developer" onerror="this.style.display='none';" />
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Suriya Prakash. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

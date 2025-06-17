@@ -1,104 +1,72 @@
-/* Reset default spacing */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 
 body {
-    font-family: 'Segoe UI', sans-serif;
-    background: #f4f4f9;
+    background: #f9f9f9;
     color: #333;
     line-height: 1.6;
 }
 
-.container {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
-    padding: 20px;
-}
-
 header {
-    background: linear-gradient(135deg, #4f46e5, #3b82f6);
+    background: #111;
+    padding: 20px 0;
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
     color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-    border-radius: 0 0 20px 20px;
+    font-weight: bold;
+    font-size: 24px;
 }
-
-header h1 {
-    font-size: 2.5rem;
-}
-
-header h1 span {
-    color: #ffde59;
-}
-
-.projects {
-    padding: 50px 0;
-    background-color: #fff;
-}
-
-.projects h2 {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 40px;
-}
-
-.project-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
-.project {
-    background: #eef2ff;
-    padding: 20px;
-    border-left: 5px solid #4f46e5;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.project h3 {
-    margin-bottom: 10px;
-    color: #1e40af;
-}
-
-footer {
-    background: #1e293b;
-    color: #fff;
-    text-align: center;
-    padding: 20px 10px;
-    margin-top: 40px;
-    border-top: 5px solid #4f46e5;
-}
-
-footer a {
-    color: #ffde59;
-    text-decoration: none;
-}
-
-
-/* Navigation Styling */
 
 .nav-links {
     list-style: none;
-    padding: 0;
-    margin: 20px 0;
     display: flex;
-    justify-content: center;
     gap: 20px;
 }
 
-.nav-links li a {
+.nav-links a {
+    color: white;
     text-decoration: none;
-    color: #4f46e5;
-    font-weight: bold;
-    transition: color 0.3s ease;
+    transition: color 0.3s;
 }
 
-.nav-links li a:hover {
-    color: #1e3a8a;
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+.hero,
+.section {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.project {
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-left: 4px solid #00bcd4;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: white;
 }
